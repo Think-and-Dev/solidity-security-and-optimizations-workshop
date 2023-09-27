@@ -7,6 +7,8 @@
   "scripts": {
     "compile": "npx hardhat compile",
     "local-node": "npx hardhat node",
+    "deploy": "npx hardhat deploy",
+    "size-contracts": "npx hardhat size-contracts --no-compile",
     "test": "npx hardhat test"
   },
   "engines": {
