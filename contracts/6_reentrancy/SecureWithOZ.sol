@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 /**
  * @title ReentrancyWithOZ
@@ -19,7 +19,7 @@ contract ReentrancyWithOZ is ReentrancyGuard {
     /**
      * @dev Allows the caller to check their balance.
      * @param _address The address to check the balance of.
-     * @return The balance of the specified address.
+     * @return balance The balance of the specified address.
      */
     function getBalance(
         address _address
