@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
-pragma solidity >=0.7.0 <0.8.0;
+pragma solidity >=0.6.0 <0.8.0;
 // Import SafeMath library from OpenZeppelin. This is forced to Solidity 0.7.x compatible version using github import
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.4.2/contracts/math/SafeMath.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.0.0/contracts/math/SafeMath.sol";
 
 /**
  * Overflows playground
