@@ -1,12 +1,13 @@
 //SPDX-License-Identifier: MIT
-pragma solidity >=0.6.0 <0.8.0;
-// Import SafeMath library from OpenZeppelin. This is forced to Solidity 0.7.x compatible version using github import
+pragma solidity 0.6.12;
+// Import SafeMath library from OpenZeppelin. This is forced to Solidity 0.6.x compatible version using github import.
+// This import is not supported by hardhat, but it is supported by Remix.
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.0.0/contracts/math/SafeMath.sol";
 
 /**
  * Overflows playground
  */
-contract Overflow07 {
+contract OverflowLessThan08 {
     using SafeMath for uint256;
     uint256 public number;
     uint256 MAX_INT = 2 ** 256 - 1;
